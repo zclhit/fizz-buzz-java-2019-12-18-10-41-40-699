@@ -5,13 +5,24 @@ public class FizzBuzz {
     private static final String FIZZ = "Fizz";
 
     public String say(int position) {
+        if (isContains(position, "7")) {
+            return processWithSeven(position);
+        }
         if (isContains(position, "5")) {
             return processNormal(position);
         }
+        return processWithThree(position);
+    }
+
+    private String processWithThree(int position) {
         if (isContains(position, "3")) {
             return FIZZ;
         }
         return processNormal(position);
+    }
+
+    private String processWithSeven(int position) {
+        return processWithThree(position);
     }
 
     private boolean isContains(int position, String s) {

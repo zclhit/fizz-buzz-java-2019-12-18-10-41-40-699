@@ -1,6 +1,5 @@
 package com.thoughtworks;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -62,5 +61,10 @@ public class FIzzBuzzTest {
     @Test
     public void should_return_Fizz_given_number_contains_3() {
         assertEquals("Fizz", fizzBuzz.say(13));
+    }
+
+    @Test
+    public void should_return_Fizz_given_73() {
+        assertEquals("Fizz", fizzBuzz.say(73));
     }
 }
