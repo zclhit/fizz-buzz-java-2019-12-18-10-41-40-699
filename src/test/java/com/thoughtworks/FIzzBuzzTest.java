@@ -38,4 +38,9 @@ public class FIzzBuzzTest {
     public void should_return_buzz_given_position_can_be_exacted_divided_by_5() {
         assertEquals("Buzz", fizzBuzz.say(5));
     }
+
+    @Test
+    public void should_return_whizz_given_position_can_be_exacted_divided_by_7() {
+        assertEquals("Whizz", fizzBuzz.say(7));
+    }
 }

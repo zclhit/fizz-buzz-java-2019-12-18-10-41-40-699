@@ -8,6 +8,9 @@ public class FizzBuzz {
         if (canBeExactedDividedBy(position, 5)) {
             return "Buzz";
         }
+        if (canBeExactedDividedBy(position, 7)) {
+            return "Whizz";
+        }
         return String.valueOf(position);
     }
 
