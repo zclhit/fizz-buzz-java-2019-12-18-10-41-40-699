@@ -23,4 +23,9 @@ public class FIzzBuzzTest {
     public void should_return_fizz_given_position_3() {
         assertEquals("Fizz", fizzBuzz.say(3));
     }
+
+    @Test
+    public void should_return_number_of_position_given_position_can_not_be_exact_divided_by_3() {
+        assertEquals("2", fizzBuzz.say(2));
+    }
 }
