@@ -50,6 +50,11 @@ public class FIzzBuzzTest {
     }
 
     @Test
+    public void should_return_BuzzWhizz_given_35() {
+        assertEquals("BuzzWhizz", fizzBuzz.say(35));
+    }
+
+    @Test
     public void should_return_FizzWhizz_given_21() {
         assertEquals("FizzWhizz", fizzBuzz.say(21));
     }
