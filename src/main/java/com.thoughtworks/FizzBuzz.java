@@ -2,16 +2,20 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int position) {
+        StringBuffer resultStr = new StringBuffer();
         if (canBeExactedDividedBy(position, 3)) {
-            return "Fizz";
+            resultStr.append("Fizz");
         }
         if (canBeExactedDividedBy(position, 5)) {
-            return "Buzz";
+            resultStr.append("Buzz");
         }
         if (canBeExactedDividedBy(position, 7)) {
-            return "Whizz";
+            resultStr.append("Whizz");
         }
-        return String.valueOf(position);
+        if (resultStr.length() == 0) {
+            return String.valueOf(position);
+        }
+        return resultStr.toString();
     }
 
     private boolean canBeExactedDividedBy(int position, int i) {

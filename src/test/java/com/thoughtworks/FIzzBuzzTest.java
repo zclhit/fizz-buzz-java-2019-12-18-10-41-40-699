@@ -43,4 +43,19 @@ public class FIzzBuzzTest {
     public void should_return_whizz_given_position_can_be_exacted_divided_by_7() {
         assertEquals("Whizz", fizzBuzz.say(7));
     }
+
+    @Test
+    public void should_return_FizzBuzz_given_15() {
+        assertEquals("FizzBuzz", fizzBuzz.say(15));
+    }
+
+    @Test
+    public void should_return_BuzzWhizz_given_35() {
+        assertEquals("BuzzWhizz", fizzBuzz.say(35));
+    }
+
+    @Test
+    public void should_return_FizzWhizz_given_21() {
+        assertEquals("FizzWhizz", fizzBuzz.say(21));
+    }
 }
